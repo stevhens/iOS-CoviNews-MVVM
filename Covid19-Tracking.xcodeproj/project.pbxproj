@@ -13,6 +13,11 @@
 		D18551C8251633490006047E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D18551C7251633490006047E /* Preview Assets.xcassets */; };
 		D18551D32516334A0006047E /* Covid19_TrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18551D22516334A0006047E /* Covid19_TrackingTests.swift */; };
 		D18551DE2516334A0006047E /* Covid19_TrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18551DD2516334A0006047E /* Covid19_TrackingUITests.swift */; };
+		D18551EF2516335C0006047E /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18551EE2516335C0006047E /* Webservice.swift */; };
+		D18551F4251633C00006047E /* Tracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18551F3251633C00006047E /* Tracking.swift */; };
+		D1855201251635230006047E /* TrackingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1855200251635230006047E /* TrackingListViewModel.swift */; };
+		D1855206251635570006047E /* TrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1855205251635570006047E /* TrackingViewModel.swift */; };
+		D185520E25163A700006047E /* TrackingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D185520D25163A700006047E /* TrackingRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		D18551D92516334A0006047E /* Covid19-TrackingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Covid19-TrackingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D18551DD2516334A0006047E /* Covid19_TrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19_TrackingUITests.swift; sourceTree = "<group>"; };
 		D18551DF2516334A0006047E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D18551EE2516335C0006047E /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		D18551F3251633C00006047E /* Tracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracking.swift; sourceTree = "<group>"; };
+		D1855200251635230006047E /* TrackingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingListViewModel.swift; sourceTree = "<group>"; };
+		D1855205251635570006047E /* TrackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewModel.swift; sourceTree = "<group>"; };
+		D185520D25163A700006047E /* TrackingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				D18551C0251633490006047E /* Covid19_TrackingApp.swift */,
-				D18551C2251633490006047E /* ContentView.swift */,
+				D185522225163BD10006047E /* Managers */,
+				D185521725163B5E0006047E /* Models */,
+				D185521E25163B990006047E /* Views */,
+				D185521225163B3D0006047E /* ViewModels */,
 				D18551C4251633490006047E /* Assets.xcassets */,
 				D18551C9251633490006047E /* Info.plist */,
 				D18551C6251633490006047E /* Preview Content */,
@@ -128,6 +141,40 @@
 				D18551DF2516334A0006047E /* Info.plist */,
 			);
 			path = "Covid19-TrackingUITests";
+			sourceTree = "<group>";
+		};
+		D185521225163B3D0006047E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D1855200251635230006047E /* TrackingListViewModel.swift */,
+				D1855205251635570006047E /* TrackingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D185521725163B5E0006047E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D18551F3251633C00006047E /* Tracking.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D185521E25163B990006047E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D18551C2251633490006047E /* ContentView.swift */,
+				D185520D25163A700006047E /* TrackingRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D185522225163BD10006047E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D18551EE2516335C0006047E /* Webservice.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D185520E25163A700006047E /* TrackingRowView.swift in Sources */,
+				D18551F4251633C00006047E /* Tracking.swift in Sources */,
+				D1855206251635570006047E /* TrackingViewModel.swift in Sources */,
+				D18551EF2516335C0006047E /* Webservice.swift in Sources */,
 				D18551C3251633490006047E /* ContentView.swift in Sources */,
+				D1855201251635230006047E /* TrackingListViewModel.swift in Sources */,
 				D18551C1251633490006047E /* Covid19_TrackingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
