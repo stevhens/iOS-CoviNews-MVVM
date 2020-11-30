@@ -1,6 +1,6 @@
-# Covid19Tracking - MVVM
+# CoviNews - MVVM
 
-Covid19 Tracking App is an app to show the current covid tracking data in the US, the datas are the state, total cases, death count, and hospitalized count.
+CoviNews is Covid19 Tracking App to show the current covid tracking data in the US, the datas are the state, total cases, death count, and hospitalized count.
 
 ### What's used in this project:
 * MVVM Architecture
