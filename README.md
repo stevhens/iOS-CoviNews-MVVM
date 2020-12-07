@@ -15,7 +15,3 @@ CoviNews is Covid19 Tracking App to show the current covid tracking data in the 
 * MVVM Architecture
 * SwiftUI
 * Networking API
-
-## Demo
-
-![CoviNews-Demo](Documentation/iOS-CoviNews.gif)
